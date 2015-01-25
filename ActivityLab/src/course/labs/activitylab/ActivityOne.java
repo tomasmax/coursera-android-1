@@ -179,6 +179,8 @@ public class ActivityOne extends Activity {
         savedInstanceState.putInt(RESTART_KEY, mRestart);
         savedInstanceState.putInt(START_KEY, mStart);
         savedInstanceState.putInt(RESUME_KEY, mResume);
+        // Call the superclass so it can save the view hierarchy state
+        super.onSaveInstanceState(savedInstanceState);
 
 	}
 
