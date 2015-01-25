@@ -84,7 +84,7 @@ public class ActivityOne extends Activity {
             mCreate = savedInstanceState.getInt(CREATE_KEY);
             mResume = savedInstanceState.getInt(RESUME_KEY);
             mStart = savedInstanceState.getInt(START_KEY);
-            mR
+            mRestart = savedInstanceState.getInt(RESTART_KEY);
 
 		}
 
@@ -93,7 +93,9 @@ public class ActivityOne extends Activity {
 
 		// TODO:
 		// Update the appropriate count variable
+        mCreate++;
 		// Update the user interface via the displayCounts() method
+        displayCounts();
 
 	}
 
@@ -108,7 +110,9 @@ public class ActivityOne extends Activity {
 
 		// TODO:
 		// Update the appropriate count variable
+        mStart++;
 		// Update the user interface
+        displayCounts();
 
 	}
 
@@ -121,7 +125,9 @@ public class ActivityOne extends Activity {
 
 		// TODO:
 		// Update the appropriate count variable
+        mResume++;
 		// Update the user interface
+        displayCounts();
 
 	}
 
@@ -150,7 +156,9 @@ public class ActivityOne extends Activity {
 
 		// TODO:
 		// Update the appropriate count variable
+        mRestart++;
 		// Update the user interface
+        displayCounts();
 
 	}
 
@@ -167,6 +175,10 @@ public class ActivityOne extends Activity {
 		// TODO:
 		// Save state information with a collection of key-value pairs
 		// 4 lines of code, one for every count variable
+        savedInstanceState.putInt(CREATE_KEY, mCreate);
+        savedInstanceState.putInt(RESTART_KEY, mRestart);
+        savedInstanceState.putInt(START_KEY, mStart);
+        savedInstanceState.putInt(RESUME_KEY, mResume);
 
 	}
 
