@@ -88,7 +88,7 @@ public class ActivityLoaderActivity extends Activity {
 		// TODO - Create a chooser intent, for choosing which Activity
 		// will carry out the baseIntent
 		// (HINT: Use the Intent class' createChooser() method)
-		Intent chooserIntent = new Intent(baseIntent, CHOOSER_TEXT);
+		Intent chooserIntent = Intent.createChooser(baseIntent, CHOOSER_TEXT);
         
         
 		Log.i(TAG,"Chooser Intent Action:" + chooserIntent.getAction());
