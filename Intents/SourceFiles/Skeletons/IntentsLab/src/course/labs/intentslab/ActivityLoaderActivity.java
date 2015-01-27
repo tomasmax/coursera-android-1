@@ -110,10 +110,7 @@ public class ActivityLoaderActivity extends Activity {
 		if (resultCode == RESULT_OK) {
 			mUserTextView.setText(data.getExtras().getString(TAG));
 		}
-	
-    
-    
-    
+
     
     }
 }
