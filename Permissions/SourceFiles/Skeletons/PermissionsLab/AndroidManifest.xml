@@ -9,6 +9,8 @@
         android:targetSdkVersion="18" />
 
     <!--  TODO - add uses-permission elements -->
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    
 
     <application
         android:allowBackup="true"
