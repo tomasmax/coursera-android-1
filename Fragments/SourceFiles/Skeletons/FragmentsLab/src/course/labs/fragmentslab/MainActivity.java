@@ -68,8 +68,10 @@ public class MainActivity extends Activity implements
 		if (!isInTwoPaneMode()) {
 
 			//TODO 2 - replace the fragment_container with the FeedFragment
-			
-
+			FragmentTransaction fragmentTransaction = this.getFragmentManager().beginTransaction();
+			fragmentTransaction.replace(R.id.fragment_container, mFeedFragment);
+			fragmentTransaction.addToBackStack(null);
+			fragmentTransaction.commit();
 			
 
 			// execute transaction now
