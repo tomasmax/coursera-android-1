@@ -14,10 +14,6 @@
     		  "course.labs.permissions.DANGEROUS_ACTIVITY_PERM" 
           and "dangerous" protection level.
     -->
-    
-     <permission
-        android:name="course.labs.permissions.DANGEROUS_ACTIVITY_PERM"
-        android:protectionLevel="dangerous"/>
 
     <application
         android:allowBackup="true"
