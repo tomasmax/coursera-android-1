@@ -88,6 +88,10 @@ public class ToDoManagerActivity extends ListActivity {
 		// if user submitted a new ToDoItem
 		// Create a new ToDoItem from the data Intent
 		// and then add it to the adapter
+		if (requestCode == ADD_TODO_ITEM_REQUEST && resultCode == RESULT_OK) {
+			ToDoItem toDoItem = new ToDoItem(data);
+			mAdapter.add(toDoItem);
+		}
 
 	}
 
