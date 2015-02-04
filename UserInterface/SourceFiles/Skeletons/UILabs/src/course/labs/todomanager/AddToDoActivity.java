@@ -143,10 +143,10 @@ public class AddToDoActivity extends Activity {
 						fullDate);
 
 				// TODO - return data Intent and finish
-				Intent intent = new Intent();
-				ToDoItem.packageIntent(intent, titleString, priority, status, fullDate);
+				Intent dataIntent = new Intent();
+				ToDoItem.packageIntent(dataIntent, titleString, priority, status, fullDate);
 				
-				setResult(RESULT_OK);
+				setResult(RESULT_OK, dataIntent);
 				finish();
 
 			}
